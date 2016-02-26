@@ -7,4 +7,5 @@
 - Установить модули
 - Запустить проект
 
-[Все подробности] (https://github.com/adreeua/eudora/CSSSR_Project_Template.md)
+[Все подробности тут] (https://github.com/adreeua/eudora/CSSSR_Project_Template.md)
+```

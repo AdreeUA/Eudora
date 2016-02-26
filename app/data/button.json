@@ -1,0 +1,41 @@
+[
+  {
+    "block": "link",
+    "content": [
+      {
+        "url": "#",
+        "heading": "Lean More"
+      },
+      {
+        "url": "#",
+        "heading": "Order now"
+      },
+      {
+        "url": "#",
+        "heading": "Send e-mail"
+      }
+    ]
+  },
+  {
+    "block": "toggle",
+    "content":[
+      {
+        "item": [
+          {
+            "name": "Desert",
+            "id": "some-id"
+          },
+          {
+            "name": "Meats",
+            "id": "some-id",
+            "mod": "active"
+          },
+          {
+            "name": "Salad",
+            "id": "some-id"
+          }
+        ]
+      }
+    ]
+  }
+]

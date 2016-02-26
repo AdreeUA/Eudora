@@ -1,0 +1,25 @@
+include ../navigation/navigation
+include ../title/title
+include ../subtitle/subtitle
+include ../btn/btn
+include ../container/container
+
+mixin header()
+	+b.header&attributes(attributes)
+		+e.nav
+			+navigation(getData("navigation"))
+
+		+container
+
+			.header__title
+				+title.title--for-bg
+					| Eudora is <span>simple</span> psd template
+
+
+			.header__subtitle
+				+subtitle.subtitle--for-bg
+					| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+			.header__btn
+				+btn.btn--for-bg
+					| LEARN MORE

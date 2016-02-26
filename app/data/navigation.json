@@ -1,43 +1,21 @@
 [
   {
-    "block": "menu",
-    "content": [
-      {
-        "url": "/menu.html"
-      }
-    ]
+    "block": "Menu",
+    "url": "/menu.html"
   },
   {
     "block": "Our story",
-    "content":[
-      {
-        "url": "/story.html"
-      }
-    ]
+    "url": "/story.html"
   },
   {
-    "block": "Eudora",
-    "content": [
-      {
-        "url": "/index.html",
-        "mod": "logo"
-      }
-    ]
+    "mod": "logo"
   },
   {
     "block": "Offer",
-    "content":[
-      {
-        "url": "/offer.html"
-      }
-    ]
+    "url": "/offer.html"
   },
   {
     "block": "Contact",
-    "content":[
-      {
-        "url": "/contact.html"
-      }
-    ]
+    "url": "/contact.html"
   }
 ]

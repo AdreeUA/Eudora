@@ -1,0 +1,36 @@
+include ../logo/logo
+
+//mixin navigation()
+//	+b('ul').navigation&attributes(attributes)
+//
+//		+e('li').item
+//			+e('a').link(href='#')
+//				| Menu
+//
+//		+e('li').item
+//			+e('a').link(href='#')
+//				| OUR STORY
+//
+//		+e('li').item
+//			+logo
+//
+//		+e('li').item
+//			+e('a').link(href='#')
+//				| OFFER
+//
+//		+e('li').item
+//			+e('a').link(href='#')
+//				| CONTACT
+
+mixin navigation(navigation)
+	+b('ul').navigation&attributes(attributes)
+		each item in navigation
+			if item.block
+				+e("li").item&attributes(attributes)
+					+e("a").link(href="#{item.url}")&attributes(attributes)
+						| #{item.block}
+					if item.mod
+						+navigation(item.mod)
+			else if item.mod
+				+e("li").item
+					+logo.navigation__logo

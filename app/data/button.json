@@ -1,6 +1,6 @@
 [
   {
-    "block": "link",
+    "type": "link",
     "content": [
       {
         "url": "#",
@@ -17,7 +17,7 @@
     ]
   },
   {
-    "block": "toggle",
+    "type": "toggle",
     "content":[
       {
         "item": [

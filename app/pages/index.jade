@@ -1,9 +1,21 @@
 extends /blocks/layout-default/layout-default
 
 include ../blocks/header/header
+include ../blocks/menu/menu
+include ../blocks/breakfast/breakfast
+include ../blocks/selection/selection
+include ../blocks/subrscribe/subrscribe
 
 block head
 	- var pageTitle = 'Eudora';
 
 block content
 	+header
+
+	+menu
+
+	+breakfast
+
+	+selection
+
+	+subrscribe

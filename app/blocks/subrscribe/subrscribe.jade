@@ -1,0 +1,14 @@
+include ../title/title
+include ../email-input/email-input
+
+mixin subrscribe()
+	+b.subrscribe&attributes(attributes)
+		
+		+title.subrscribe__title
+			| Subrscribe our newsletter
+			
+		+e.email
+			+email-input
+
+		+btn.subrscribe__btn
+			| SEND E-MAIL

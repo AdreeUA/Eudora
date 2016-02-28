@@ -1,0 +1,23 @@
+include ../container/container
+include ../title/title
+include ../subtitle/subtitle
+include ../foot/foot
+
+
+mixin selection()
+	+b.selection&attributes(attributes)
+		
+		+container
+
+			.strip-title.selection__title
+				+title.strip-title__item
+					| Lorem ipsum dolor sit amet
+
+			.selection__subtitle
+				+subtitle
+					| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+			.selection__list
+				+foot(getData("foot")).selection__item
+
+

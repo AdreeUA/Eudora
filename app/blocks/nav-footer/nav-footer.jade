@@ -1,0 +1,9 @@
+mixin nav-footer(navigation)
+	+b('ul').nav-footer&attributes(attributes)
+
+		each item in navigation
+
+			if item.block
+				+e("li").item&attributes(attributes)
+					+e("a").link(href="#{item.url}")&attributes(attributes)
+						| #{item.block}

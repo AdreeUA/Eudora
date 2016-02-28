@@ -1,0 +1,60 @@
+include ../btn/btn
+include ../dish/dish
+include ../price/price
+include ../heading/heading
+include ../disc/disc
+include ../strip-title/strip-title
+
+
+mixin menu()
+	+b.menu&attributes(attributes)
+		+container
+			.menu__title
+				+strip-title
+					+title.strip-title__item
+						| Lorem ipsum dolor sit amet
+
+			.menu__subtitle
+				+subtitle
+					| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+
+			.menu__btns
+				+btn.menu__toggle
+					| DESSERTS
+				+btn.menu__toggle_active
+					| MEATS	
+				+btn.menu__toggle
+					| SALADS
+
+			.menu__list
+				.menu__item
+					+dish(1)
+					+btn.menu__btn
+						| LEARN MORE
+
+				.menu__item
+					+dish(5)
+					+btn.menu__btn
+						| LEARN MORE
+
+				.menu__item.menu__item_active
+					+dish(2).menu__picture_active
+
+					+price.menu__price
+						| 38$
+					+heading.menu__heading
+						| Lorem ipsum name
+					+disc
+						| consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+					+btn.menu__btn
+						| ORDER NOW
+
+				.menu__item
+					+dish(3)
+					+btn.menu__btn
+						| LEARN MORE
+
+				.menu__item
+					+dish(4)
+					+btn.menu__btn 
+						| LEARN MORE

@@ -1,0 +1,17 @@
+include ../icon/icon
+include ../heading/heading
+include ../disc/disc
+include ../btn/btn
+
+mixin foot(list)
+	each item in list
+		+b.foot&attributes(attributes)
+
+			+icon(item.name).icon
+
+			+heading "#{item.heading}"
+
+			+disc "#{item.discription}"
+
+			+btn
+				| Lean more

@@ -1,0 +1,13 @@
+include ../container/container
+include ../nav-footer/nav-footer
+
+mixin footer()
+	+b("footer").footer&attributes(attributes)
+
+		+container
+			.footer__item
+
+				.footer__copiright
+					| &copy; Copyright 2015 by Eudora. All rights reserved
+
+				+nav-footer(getData("navigation"))

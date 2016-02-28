@@ -7,7 +7,7 @@ include ../container/container
 mixin header()
 	+b.header&attributes(attributes)
 		+e.nav
-			+navigation(getData("navigation"))
+			+navigation(getData("navigation"))._type_header
 
 		+container
 

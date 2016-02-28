@@ -3,6 +3,8 @@ include /../node_modules/jade-injected/jade-injected
 include ../page/page
 include ../box/box
 include ../scripts/scripts
+include ../footer/footer
+
 
 doctype html
 html(lang='ru')
@@ -12,3 +14,5 @@ html(lang='ru')
 			block content
 
 		+scripts(['app.min.js'])
+
+		+footer
